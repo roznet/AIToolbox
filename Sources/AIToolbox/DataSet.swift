@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 public enum DataTypeError: Error {
     case invalidDataType
     case dataWrongForType
@@ -495,7 +496,7 @@ open class DataSet : MLRegressionDataSet, MLClassificationDataSet, MLCombinedDat
     }
     
     //  Leave here in case it is used by other methods
-    open static func gaussianRandom(_ mean : Double, standardDeviation : Double) -> Double
+    public static func gaussianRandom(_ mean : Double, standardDeviation : Double) -> Double
     {
         return Gaussian.gaussianRandom(mean, standardDeviation: standardDeviation)
     }

@@ -4,6 +4,7 @@
 
 #  File system
 .DS_Store
+.swiftpm
 
 ## Build generated
 build/
