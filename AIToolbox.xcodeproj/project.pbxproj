@@ -23,7 +23,6 @@
 		0E04D01B1DEE6F19008A5BF7 /* DeepLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA300F21DB2951A009CB319 /* DeepLayer.swift */; };
 		0E04D01D1DEE6F1D008A5BF7 /* DeepNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA300F31DB2951A009CB319 /* DeepNetwork.swift */; };
 		0E04D01F1DEE6F21008A5BF7 /* DeepNetworkOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA300F41DB2951A009CB319 /* DeepNetworkOperator.swift */; };
-		0E04D0211DEE6F25008A5BF7 /* DeepNeuralNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA300F51DB2951A009CB319 /* DeepNeuralNetwork.swift */; };
 		0E04D0231DEE6F2B008A5BF7 /* MLPersistenceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA300F61DB2951A009CB319 /* MLPersistenceProtocol.swift */; };
 		0E04D0251DEE6F2F008A5BF7 /* Pooling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA300F71DB2951A009CB319 /* Pooling.swift */; };
 		0E0A4F9D1C133E8800AD5AAE /* AIToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0A4F931C133E8800AD5AAE /* AIToolbox.framework */; };
@@ -60,8 +59,6 @@
 		0EA300FD1DB2951A009CB319 /* DeepNeuralNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA300F51DB2951A009CB319 /* DeepNeuralNetwork.swift */; };
 		0EA300FE1DB2951A009CB319 /* MLPersistenceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA300F61DB2951A009CB319 /* MLPersistenceProtocol.swift */; };
 		0EA300FF1DB2951A009CB319 /* Pooling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA300F71DB2951A009CB319 /* Pooling.swift */; };
-		0EA301061DB4767B009CB319 /* DeepNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA301051DB4767B009CB319 /* DeepNetworkTests.swift */; };
-		0EA301071DB4767B009CB319 /* DeepNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA301051DB4767B009CB319 /* DeepNetworkTests.swift */; };
 		0EA941AD1BD5F80E006BAECD /* NeuralNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA941AC1BD5F80E006BAECD /* NeuralNetworkTests.swift */; };
 		0EAAFD471CA9F37E0062EBD5 /* MarkovDecisionProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAAFD461CA9F37E0062EBD5 /* MarkovDecisionProcess.swift */; };
 		0EAAFD481CA9F37E0062EBD5 /* MarkovDecisionProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAAFD461CA9F37E0062EBD5 /* MarkovDecisionProcess.swift */; };
@@ -117,6 +114,7 @@
 		0EDA12261C49FA9900F03FDE /* MetalNeuralNetworkShaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDA12241C49FA9900F03FDE /* MetalNeuralNetworkShaders.swift */; };
 		113C07471ED379D900C31415 /* DeepNonLinearity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C07461ED379D900C31415 /* DeepNonLinearity.swift */; };
 		113C07481ED379D900C31415 /* DeepNonLinearity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C07461ED379D900C31415 /* DeepNonLinearity.swift */; };
+		426A52312689B18800765335 /* DeepNeuralNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA300F51DB2951A009CB319 /* DeepNeuralNetwork.swift */; };
 		FB0D5A301CB010090097590B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB0D5A2E1CB010090097590B /* Foundation.framework */; };
 		FB0D5A311CB010090097590B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB0D5A2F1CB010090097590B /* UIKit.framework */; };
 /* End PBXBuildFile section */
@@ -496,15 +494,16 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "Kevin Coble";
 				TargetAttributes = {
 					0E0A4F921C133E8800AD5AAE = {
 						CreatedOnToolsVersion = 7.1.1;
+						LastSwiftMigration = 1250;
 					};
 					0E0A4F9B1C133E8800AD5AAE = {
 						CreatedOnToolsVersion = 7.1.1;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 1250;
 					};
 					0EBA29AA1A91350C0012CEC9 = {
 						CreatedOnToolsVersion = 6.3;
@@ -579,10 +578,10 @@
 				0EB9FF471E80C1E800AA058E /* SVM.swift in Sources */,
 				0E04D01D1DEE6F1D008A5BF7 /* DeepNetwork.swift in Sources */,
 				0E0E25FF1CA119160087932B /* PrincipalComponantAnalysis.swift in Sources */,
-				0E04D0211DEE6F25008A5BF7 /* DeepNeuralNetwork.swift in Sources */,
 				113C07481ED379D900C31415 /* DeepNonLinearity.swift in Sources */,
 				0E04D01F1DEE6F21008A5BF7 /* DeepNetworkOperator.swift in Sources */,
 				0E04D0231DEE6F2B008A5BF7 /* MLPersistenceProtocol.swift in Sources */,
+				426A52312689B18800765335 /* DeepNeuralNetwork.swift in Sources */,
 				0E3CB5AC1CE6C9FB008ABA4E /* LogisticRegression.swift in Sources */,
 				0EB9FF481E80C1E800AA058E /* SVMExtensions.swift in Sources */,
 				0EB9FF3D1E80C1E800AA058E /* GeneticAlgorithm.swift in Sources */,
@@ -623,7 +622,6 @@
 				0E3CB5A41CCD30D3008ABA4E /* ValidationTests.swift in Sources */,
 				0E0E26021CA44EA80087932B /* PCATests.swift in Sources */,
 				0E0A4FC11C14EDC100AD5AAE /* SVMTests.swift in Sources */,
-				0EA301071DB4767B009CB319 /* DeepNetworkTests.swift in Sources */,
 				0EAAFD4B1CA9F3BD0062EBD5 /* MDPTests.swift in Sources */,
 				0E0A4FB51C1342EB00AD5AAE /* GraphTests.swift in Sources */,
 				0EDA12181C435FF700F03FDE /* MetalNeuralNetworkTests.swift in Sources */,
@@ -691,7 +689,6 @@
 				0E3CB5A31CCD30D3008ABA4E /* ValidationTests.swift in Sources */,
 				0E0E26011CA44EA80087932B /* PCATests.swift in Sources */,
 				0E0A4FC01C14EDC100AD5AAE /* SVMTests.swift in Sources */,
-				0EA301061DB4767B009CB319 /* DeepNetworkTests.swift in Sources */,
 				0EAAFD4A1CA9F3BD0062EBD5 /* MDPTests.swift in Sources */,
 				0EBA29CA1A9135940012CEC9 /* GraphTests.swift in Sources */,
 				0EDA12171C435FF700F03FDE /* MetalNeuralNetworkTests.swift in Sources */,
@@ -731,13 +728,13 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = AIToolboxIOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MacRobotics.AIToolboxIOS;
 				PRODUCT_NAME = AIToolbox;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -753,13 +750,13 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = AIToolboxIOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MacRobotics.AIToolboxIOS;
 				PRODUCT_NAME = AIToolbox;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -771,12 +768,12 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = AIToolboxIOSTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MacRobotics.AIToolboxIOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -786,12 +783,12 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = AIToolboxIOSTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MacRobotics.AIToolboxIOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -819,6 +816,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -878,6 +876,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

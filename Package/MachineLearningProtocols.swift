@@ -31,7 +31,7 @@ public enum DataSetType   //  data type
     case realAndClass           //  Has both real array and class (SVM predict values, etc.)
 }
 
-public protocol MLDataSet : class {     //  Machine learning data set provider
+public protocol MLDataSet : AnyObject {     //  Machine learning data set provider
     var dataType : DataSetType { get }
     var inputDimension: Int  { get }
     var outputDimension: Int { get }
