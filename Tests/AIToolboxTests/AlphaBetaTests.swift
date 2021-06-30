@@ -9,7 +9,6 @@
 import Foundation
 import XCTest
 import AIToolbox
-import AIToolboxExtended
 
 /*
 values at each branch            root

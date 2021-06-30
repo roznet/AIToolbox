@@ -8,7 +8,6 @@
 
 import Foundation
 import Accelerate
-import AIToolbox
 
 enum PCAError: Error {
     case invalidDimensions

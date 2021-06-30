@@ -32,7 +32,7 @@ open class Gaussian {
         if (variance < 0.0) { throw GaussianError.badVarianceValue }
         self.mean = mean
         σsquared = variance
-        multiplier = 1.0 / sqrt(σsquared * 2.0 * M_PI)
+        multiplier = 1.0 / sqrt(σsquared * 2.0 * .pi)
     }
     
     open func setMean(_ mean: Double)
@@ -43,7 +43,7 @@ open class Gaussian {
     open func setVariance(_ variance: Double)
     {
         σsquared = variance
-        multiplier = 1.0 / sqrt(σsquared * 2.0 * M_PI)
+        multiplier = 1.0 / sqrt(σsquared * 2.0 * .pi)
     }
     
     open func setParameters(_ parameters: [Double]) throws
@@ -178,7 +178,7 @@ open class MultivariateGaussian {
     }
     
     fileprivate func getComputeValues() throws {
-        var denominator = pow(2.0 * M_PI, Double(dimension) * 0.5)
+        var denominator = pow(2.0 * .pi, Double(dimension) * 0.5)
         
         //  Get the determinant and inverse of the covariance matrix
         var sqrtDeterminant = 1.0

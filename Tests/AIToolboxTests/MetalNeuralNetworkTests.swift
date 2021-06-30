@@ -8,7 +8,6 @@
 
 import XCTest
 import AIToolbox
-import AIToolboxExtended
 
 @available(OSX 10.11, iOS 8.0, *)
 class MetalNeuralNetworkTests: XCTestCase {

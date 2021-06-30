@@ -11,8 +11,6 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(name: "AIToolbox", targets: ["AIToolbox" ] ),
-        .library(name: "AIToolboxExtended", targets: ["AIToolboxExtended" ] ),
-        .library(name: "AIToolboxIOS", targets: ["AIToolboxIOS" ] ),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -23,15 +21,9 @@ let package = Package(
         .target(
             name: "AIToolbox",
             dependencies: []),
-        .target(
-            name: "AIToolboxExtended",
-            dependencies: ["AIToolbox"]),
-        .target(
-            name: "AIToolboxIOS",
-            dependencies: ["AIToolbox","AIToolboxExtended"]),
         .testTarget(
             name: "AIToolboxTests",
-            dependencies: ["AIToolbox", "AIToolboxExtended"]),
+            dependencies: ["AIToolbox"]),
         
     ]
 )

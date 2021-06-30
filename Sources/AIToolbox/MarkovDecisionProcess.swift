@@ -8,7 +8,6 @@
 
 import Foundation
 import Accelerate
-import AIToolbox
 
 ///  Errors that MDP routines can throw
 public enum MDPErrors: Error {

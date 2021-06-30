@@ -8,7 +8,6 @@
 
 import Foundation
 import Accelerate
-import AIToolbox
 
 ///  Enumeration for type of solution attempted for the non-linear rectression
 public enum NonLinearRegressionType {

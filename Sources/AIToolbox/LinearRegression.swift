@@ -8,7 +8,6 @@
 
 import Foundation
 import Accelerate
-import AIToolbox
 
 public enum LinearRegressionError: Error {
     case modelExceedsInputDimension

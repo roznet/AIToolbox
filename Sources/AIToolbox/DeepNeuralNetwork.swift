@@ -7,11 +7,7 @@
 //
 
 import Foundation
-
-
-import Foundation
 import Accelerate
-import AIToolbox
 
 final public class DeepNeuralNetwork : DeepNetworkOperator
 {

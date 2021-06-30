@@ -8,7 +8,7 @@
 
 import Foundation
 import Accelerate
-import AIToolbox
+
 
 final public class DeepNonLinearity : DeepNetworkOperator
 {

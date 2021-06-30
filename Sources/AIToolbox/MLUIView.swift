@@ -1,7 +1,5 @@
 #if os(iOS)
 import UIKit
-import AIToolbox
-import AIToolboxExtended
 
 public enum MLViewError: Error {
     case dataSetNotRegression

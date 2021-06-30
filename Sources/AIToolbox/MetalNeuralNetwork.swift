@@ -9,7 +9,6 @@
 import Foundation
 import Accelerate
 import Metal
-import AIToolbox
 
 @available(OSX 10.11, iOS 8.0, *)
 final class MetalNeuralLayer {

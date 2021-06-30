@@ -8,7 +8,6 @@
 
 import XCTest
 import AIToolbox
-import AIToolboxExtended
 
 class PCATests: XCTestCase {
 

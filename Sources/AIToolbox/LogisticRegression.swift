@@ -8,7 +8,6 @@
 
 import Foundation
 import Accelerate
-import AIToolbox
 
 ///  Class for logistic regression solving/classification
 open class LogisticRegression : Regressor, Classifier

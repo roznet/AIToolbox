@@ -8,7 +8,7 @@
 
 import XCTest
 import AIToolbox
-import AIToolboxExtended
+
 class ValidationTests: XCTestCase {
 
     override func setUp() {

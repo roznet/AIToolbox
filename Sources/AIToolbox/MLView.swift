@@ -1,6 +1,5 @@
 #if os(macOS)
 import Cocoa
-import AIToolbox
 
 public enum MLViewError: Error {
     case dataSetNotRegression
