@@ -33,7 +33,7 @@ class GaussianTests: XCTestCase {
             print("error creating gaussian")
         }
     }
-
+    #if !os(Linux)
     func testMultiVariate() {
         //  Create a multivariate gaussian
         do {
@@ -49,7 +49,7 @@ class GaussianTests: XCTestCase {
             print("error creating gaussian")
         }
     }
-
+    #endif
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {

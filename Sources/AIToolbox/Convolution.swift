@@ -6,6 +6,7 @@
 //  Copyright © 2016 Kevin Coble. All rights reserved.
 //
 
+#if !os(Linux)
 import Foundation
 import Accelerate
 
@@ -317,3 +318,4 @@ final public class Convolution2D : DeepNetworkOperator
         return resultDictionary
     }
 }
+#endif

@@ -6,6 +6,7 @@
 //  Copyright © 2016 Kevin Coble. All rights reserved.
 //
 
+#if !os(Linux)
 import Foundation
 import XCTest
 import AIToolbox
@@ -243,3 +244,4 @@ open class SimpleEquation : NonLinearEquation {
     }
 }
 
+#endif

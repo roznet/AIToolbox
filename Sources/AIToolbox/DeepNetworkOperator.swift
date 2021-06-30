@@ -6,6 +6,7 @@
 //  Copyright © 2016 Kevin Coble. All rights reserved.
 //
 
+#if !os(Linux)
 import Foundation
 
 
@@ -94,3 +95,4 @@ extension DeepNetworkOperator {
         return resultDictionary
     }
 }
+#endif

@@ -6,6 +6,7 @@
 //  Copyright © 2016 Kevin Coble. All rights reserved.
 //
 
+#if !os(Linux)
 import Foundation
 import Accelerate
 
@@ -707,3 +708,4 @@ open class MDP {
         return Qstar
     }
 }
+#endif

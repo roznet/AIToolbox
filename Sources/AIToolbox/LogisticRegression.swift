@@ -6,6 +6,7 @@
 //  Copyright © 2016 Kevin Coble. All rights reserved.
 //
 
+#if !os(Linux)
 import Foundation
 import Accelerate
 
@@ -334,4 +335,4 @@ class LogitFunction : NonLinearEquation {
         return gradient
     }
 }
-
+#endif

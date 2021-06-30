@@ -80,10 +80,17 @@ class KMeansTest: XCTestCase {
         do {
             for _ in 0..<1000 {
                 var inputs: [Double] = []
+                #if os(Linux)
+                inputs.append(Double(random()) / Double(UInt32.max))
+                inputs.append(Double(random()) / Double(UInt32.max))
+                inputs.append(Double(random()) / Double(UInt32.max))
+                inputs.append(Double(random()) / Double(UInt32.max))
+                #else
                 inputs.append(Double(arc4random()) / Double(UInt32.max))
                 inputs.append(Double(arc4random()) / Double(UInt32.max))
                 inputs.append(Double(arc4random()) / Double(UInt32.max))
                 inputs.append(Double(arc4random()) / Double(UInt32.max))
+                #endif
                 try data.addUnlabeledDataPoint(input: inputs)
             }
         }

@@ -6,6 +6,7 @@
 //  Copyright © 2016 Kevin Coble. All rights reserved.
 //
 
+#if !os(Linux)
 import Foundation
 
 public struct DeepChannelSize {
@@ -322,3 +323,4 @@ final public class DeepChannel : MLPersistence
     }
 
 }
+#endif

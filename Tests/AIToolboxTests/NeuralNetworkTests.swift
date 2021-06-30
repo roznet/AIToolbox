@@ -6,6 +6,7 @@
 //  Copyright © 2015 Kevin Coble. All rights reserved.
 //
 
+#if !os(Linux)
 import XCTest
 import AIToolbox
 
@@ -653,3 +654,4 @@ class NeuralNetworkTests: XCTestCase {
     }
 
 }
+#endif

@@ -6,6 +6,7 @@
 //  Copyright © 2016 Kevin Coble. All rights reserved.
 //
 
+#if !os(Linux)
 import Foundation
 import Accelerate
 import Metal
@@ -571,3 +572,4 @@ open class MetalNeuralNetwork {
     }
 */
 }
+#endif

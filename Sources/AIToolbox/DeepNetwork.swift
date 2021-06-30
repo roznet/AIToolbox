@@ -6,6 +6,7 @@
 //  Copyright © 2016 Kevin Coble. All rights reserved.
 //
 
+#if !os(Linux)
 import Foundation
 
 protocol DeepNetworkInputSource {
@@ -639,3 +640,4 @@ final public class DeepNetwork : DeepNetworkInputSource, DeepNetworkOutputDestin
         return resultDictionary
     }
 }
+#endif

@@ -6,6 +6,7 @@
 //  Copyright © 2016 Kevin Coble. All rights reserved.
 //
 
+#if !os(Linux)
 import Foundation
 
 public protocol MLPersistence {
@@ -57,3 +58,4 @@ extension MLPersistence {
         return returnArray
     }
 }
+#endif

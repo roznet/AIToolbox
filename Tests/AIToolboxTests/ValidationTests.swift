@@ -5,7 +5,7 @@
 //  Created by Kevin Coble on 4/24/16.
 //  Copyright © 2016 Kevin Coble. All rights reserved.
 //
-
+#if !os(Linux)
 import XCTest
 import AIToolbox
 
@@ -93,6 +93,7 @@ class ValidationTests: XCTestCase {
             try validation.addModel(quadratic)
             try validation.addModel(exponential)
         }
+        
         catch {
             print("error creating validation object")
         }
@@ -115,3 +116,4 @@ class ValidationTests: XCTestCase {
     }
 
 }
+#endif

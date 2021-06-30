@@ -6,6 +6,7 @@
 //  Copyright © 2017 Kevin Coble. All rights reserved.
 //
 
+#if !os(Linux)
 import Foundation
 import Accelerate
 
@@ -189,3 +190,4 @@ final public class DeepNonLinearity : DeepNetworkOperator
     }
 }
  
+#endif

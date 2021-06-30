@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Kevin Coble. All rights reserved.
 //
 
+#if !os(Linux)
 import Foundation
 import XCTest
 import AIToolbox
@@ -102,3 +103,4 @@ class AlphaBetaTests: XCTestCase {
     }
 
 }
+#endif
